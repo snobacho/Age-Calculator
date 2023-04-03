@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    
+    background-color: rgb(236, 236, 225);
+}
+.calc-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 5px;
+    box-shadow: 5px 5px 20px black;
+    transition: .3s;
+    border-radius: 10px;
+}
+.calc-container > h2 {
+    text-align: center;
+    color: rgb(51, 44, 44);
+    margin: 20px 0;
+    text-decoration: underline 5px;
+}
+select {
+    outline: none;
+    height: 40px;
+    border: 4px solid dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+select:nth-child(1) {
+    width: 60px;
+}
+select option {
+    background-color: #1a1919;
+    color: rgb(255, 248, 248);
+    font-size: 18px;
+  }
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(56, 49, 63, 0.993);
+}
+.submit {
+    width: 100%;
+    height: 40px;
+    border: 5px solid dodgerblue;
+    border-radius: 5px;
+    color: rgb(51, 44, 44);
+    font-size: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    background: transparent;
+}
+.submit:hover {
+    background: #ffffff;
+    transition:  .5s;
+}
+.submit:active {
+    transform: translateY(-2px);
+}
+.birth-time, .age{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition:  0.3s;
+}
